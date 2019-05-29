@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <label>
+                        <form data-url="url-img">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" data-url="url-img-input"
+                                       placeholder="Enter Url image">
+                                <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="submit" data-btn="url">Send </button>
+                                </div>
+                                <div class="col">
+                                    <button  type="submit" class="btn btn-outline-secondary" data-btn="url-nasa">get a picture from mars</button>
+                                </div>
+                            </div>
+                        </form>
+                    </label>
+                    <div class="col-auto">
+                        <img src="https://zabavnik.club/wp-content/uploads/2018/02/znak_voprosa_29_17183622.png"
+                             alt="image"
+                             class="rounded mx-auto d-block img-thumbnail" data-img="url-img">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p>Tags</p>
+                            <ul class="list-group" data-ul="img-tags">
+                            </ul>
+                        </div>
+                        <div class="col-sm" data-img="spinner">
+                        </div>
+                        <div class="col-sm-3">
+                            <p>Colors</p>
+                            <ul class="list-group" data-ul="img-colors" id="colors">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/js/jquery.min.js"></script>
+<script src="scripts/imageProvider.js"></script>
+<script src="scripts/imagePresent.js"></script>
+<script src="scripts/imageProcessor.js"></script>
+<script src="scripts/tags.js"></script>
+<script src="scripts/color.js"></script>
+<script src="scripts/remoteImagga.js"></script>
+<script src="scripts/spinner.js"></script>
+<script src="scripts/nasaImage.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
